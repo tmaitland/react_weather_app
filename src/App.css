@@ -76,6 +76,12 @@
   color: white;
 }
 
+td {
+  width: 250px;
+  padding: 1rem;
+  color: black;
+}
+
 h1, h2, h3, h4, h5, h6 {
   font-family: 'Alegreya Sans SC', sans-serif;
 }
