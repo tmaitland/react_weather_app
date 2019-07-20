@@ -22,7 +22,7 @@
 }
 
 .leftHeader {
-  height: 100vh;
+  height: auto;
   width: 50%;
   background: white;
   display: flex;
@@ -33,7 +33,7 @@
 .rightInfo {
   height: 100vh;
   width: 50%;
-  background: linear-gradient(rgb(0,0,0,0.25), rgb(0,0,0,0.5)), url(/static/media/sunnyDay-min.f747b3b2.jpg);
+  background: linear-gradient(rgb(0,0,0,0.25), rgb(0,0,0,0.5)), url(./sunnyDay-min.jpg);
   background-size: cover;
 }
 
@@ -48,6 +48,32 @@
 
 .weatherApp-title h1 {
   font-size: 6rem;
+}
+
+.rightInfo .section {
+  background: rgb(240, 248, 255, .70);
+  height: 100%;
+}
+
+.cityCountry {
+  background-color: transparent!important;
+  border: none;
+  padding: 1rem;
+  margin: 2rem .75rem;
+  border-bottom: 5px solid cornflowerblue;
+  font-size: 1.25rem;
+  color: black;
+}
+
+.getWeather {
+  border: none;
+  padding: 1rem;
+  box-shadow: 0px 5px 6px #000000cc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  background: cornflowerblue;
+  color: white;
 }
 
 h1, h2, h3, h4, h5, h6 {

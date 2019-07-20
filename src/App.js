@@ -1,5 +1,5 @@
 import React from 'react';
-// import Weather from './weather';
+import CurrentWeather from './components/CurrentWeather';
 import './App.css';
 
 
@@ -15,7 +15,8 @@ function App() {
           </div>
         </div>
         <div className="rightInfo">
-              {/* {Weather} */}
+          <CurrentWeather />
+          
         </div>
       </header>
     </div>
