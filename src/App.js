@@ -16,6 +16,7 @@ function App() {
             <Link to ='./forecast/FiveDayForecast'>
             <button className="getForecasts">View 5-Day Forecast</button>
             </Link>
+            
           </div>
         </div>
         <div className="rightInfo">

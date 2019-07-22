@@ -9,7 +9,8 @@ const capitalize = {
 
 const tableStyles = {
 	width: '80%',
-    textAlign: 'left',
+	textAlign: 'left',
+	color: 'black',
     /* display: flex; */
     /* flex-direction: column; */
     /* justify-content: center; */

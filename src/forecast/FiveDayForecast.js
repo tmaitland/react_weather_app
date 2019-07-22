@@ -32,7 +32,8 @@ const formStyle = {
 }
 
 const noUnderline = {
-    textDecoration: 'none'
+    textDecoration: 'none',
+    color: 'black'
 }
 
 const APPID = '9347522dfc18eb6dc577618e6c9e8db1';
@@ -110,13 +111,20 @@ class FiveDayForeCast extends React.Component {
 
         for (let i=0; i < this.state.day.length; i = i + limitNum) {
             let weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
+            let dayForecast = [];
+              dayForecast[8] = 'Day1';
+              dayForecast[16] = 'Day2'; 
+              dayForecast[24] = 'Day3'; 
+              dayForecast[32] = 'Day4'; 
+              dayForecast[40] = 'Day5';
+            
             let eachDay = this.state.day[i];
             let thatDay = new Date(eachDay);
             let weekDay = thatDay.getDay();
             if(eachDay) {
             
             fivedays.push(
-            <div className="weatherCard">
+            <Link style={noUnderline} to = {`./${dayForecast[i + limitNum]}`}><div className="weatherCard">
                 <h3>{weekDays[weekDay]}</h3>
                 <div className="holdIcon">
                     <img src={`${iconurl}${this.state.icon[i]}${imgext}`} alt="weather icon" />
@@ -126,6 +134,7 @@ class FiveDayForeCast extends React.Component {
                     <span className="temp">{this.state.maxTemp[i]}&#176;F</span>
                 </div>    
             </div>
+            </Link>
             );
              console.log(weekDay)
             }
@@ -140,7 +149,6 @@ class FiveDayForeCast extends React.Component {
                         <div style={formStyle}><Form getWeather={this.getWeather}/></div>
                         <div className="holdWeekDay">{fivedays}</div>
                         <Link to="/" style={noUnderline}><button className="getForecasts" style={centerBtn}>Go Back</button></Link>
-                        <Link to="/forecast/Day1" style={noUnderline}><button className="getForecasts" style={centerBtn}>Hourly Forecast</button></Link>
                        
                       
                   </div>
