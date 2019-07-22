@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Alegreya+Sans+SC|Darker+Grotesque&display=swap');
 html {
-  background: linear-gradient(rgb(255,255,255,0.65), rgb(255,255,255,0.5)), url(/static/media/forecastBG.12362085.jpg);
+  background: linear-gradient(rgb(255,255,255,0.65), rgb(255,255,255,0.5)), url(./components/forecastBG.jpg);
   background-size: cover;
   height: 100vh;
 }
