@@ -56,7 +56,7 @@ class CurrentWeather extends React.Component {
           });
          
         }
-        // console.log(`${data.weather[0].icon}`);
+        console.log(`${data.weather}`);
       }
 
       render() {

@@ -22,7 +22,7 @@
 }
 
 .leftHeader {
-  height: auto;
+  height: 100vh;
   width: 50%;
   background: white;
   display: flex;
@@ -44,6 +44,7 @@
 .weatherApp-title {
   color: cornflowerblue;
   text-shadow: 1px 3px 5px #ccc;
+  height: 100%;
 }
 
 .weatherApp-title h1 {
@@ -76,10 +77,42 @@
   color: white;
 }
 
-td {
-  width: 250px;
+.getForecasts {
+  border: none;
   padding: 1rem;
-  color: black;
+  box-shadow: 0px 5px 6px #000000cc;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  font-size: 1rem;
+  background: cornflowerblue;
+  color: white;
+}
+
+
+.holdWeekDay {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 60%;
+}
+
+.weatherCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100px;
+  border: 3px solid #ccc;
+  padding: 1rem 2rem 2rem 2rem;
+}
+
+.tempHighLow {
+  display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.section .container {
+  height: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {

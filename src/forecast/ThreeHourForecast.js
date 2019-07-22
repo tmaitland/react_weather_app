@@ -4,28 +4,10 @@ import ReactDOM from 'react-dom';
 const divStyle = {
     // width:'100%',   
     // color: '#000066',
-    color:'white'
+    color:'white',
+    backgroundColor: 'black'
 }
-// const h1Style = {
-//     padding: '30px',
-//     fontSize: '46px',
-//     backgroundColor:'#66ccff',
-// }
-// const h1day ={
-//     color:'white',
-// }
-// const left2 ={
-//     position:'relative',
-//     right: '-200px',
-//     top: '199px',
-// }
-//  const h1Days = {
-//      padding: '0  30px',
-//      fontSize: '46px',
-     
-     
-// }
- 
+
  const left = {
      float: 'left',
      backgroundSize: '100% 100%',
@@ -50,7 +32,7 @@ const helper = new OpenWeatherMapHelper({
     units:"imperial"
 });
 
-class DayI extends React.Component{ 
+class ThreeHourForecast extends React.Component{ 
     constructor(props) {
         super(props);
 
@@ -145,9 +127,6 @@ class DayI extends React.Component{
             <div style ={divStyle}>
                 <div style={left}>
 
-                    <p>Type in a city name</p>
-                    {cityName}
-                
                     <h1> Today's Weather Information:</h1>
                     <br/>
                     <table border="1">
@@ -162,4 +141,4 @@ class DayI extends React.Component{
     }
 }
 
-export default DayI;
+export default ThreeHourForecast;
