@@ -112,11 +112,14 @@ class FiveDayForeCast extends React.Component {
         //   let limitNum = this.state.day.length / 5;
 
         for (let i=0; i < this.state.day.length; i++) {
+            let holdWeekDay = document.getElementById("holdWeekDay");
             let weekDays = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
             let eachDay = this.state.day[i];
             let thatDay = new Date(eachDay);
             let weekDay = thatDay.getDay();
             var time = eachDay.split(' ')[1];
+
+            holdWeekDay.innerHTML = "";
 
             if(eachDay.startsWith(now)) {
             
@@ -147,7 +150,7 @@ class FiveDayForeCast extends React.Component {
                              city={this.state.city}
                              country={this.state.country}
                         /></div>
-                        <div className="holdWeekDay">{threeHours}</div>
+                        <div className="holdWeekDay" id="holdWeekDay">{threeHours}</div>
                         
                         <div className="holdFCBtns">
                             <Link to="/" style={noUnderline}><button className="getForecasts" style={centerBtn}>Go Back Home</button></Link>

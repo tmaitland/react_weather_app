@@ -117,6 +117,7 @@ class FiveDayForeCast extends React.Component {
               dayForecast[24] = 'Day3'; 
               dayForecast[32] = 'Day4'; 
               dayForecast[40] = 'Day5';
+              
             
             let eachDay = this.state.day[i];
             let thatDay = new Date(eachDay);
