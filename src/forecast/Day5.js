@@ -35,7 +35,7 @@ const noUnderline = {
     textDecoration: 'none'
 }
 
-const APPID = '9347522dfc18eb6dc577618e6c9e8db1';
+const APPID = '';
 // let cityName = `Accra`;
 
 class FiveDayForeCast extends React.Component {

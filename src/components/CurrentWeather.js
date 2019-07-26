@@ -10,7 +10,7 @@ import CityWeather from './CityWeather';
 //     units:"kelvin"
 // });
 
-const APPID = '9347522dfc18eb6dc577618e6c9e8db1';
+const APPID = '';
 // let cityName = `Accra`;
 
 class CurrentWeather extends React.Component {
